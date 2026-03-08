@@ -1,0 +1,90 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+line-height:1.6;
+}
+
+/* Navigation bar */
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+background:transparent;
+transition:0.3s;
+}
+
+/* Scroll effect */
+nav.scrolled{
+background:#333;
+}
+
+/* Logo */
+.logo{
+color:white;
+}
+
+/* Menu */
+.menu{
+list-style:none;
+display:flex;
+}
+
+.menu li{
+margin-left:20px;
+}
+
+.menu a{
+text-decoration:none;
+color:white;
+font-size:18px;
+transition:0.3s;
+}
+
+/* Hover effect */
+.menu a:hover{
+color:yellow;
+}
+
+/* Hero section */
+.hero{
+height:100vh;
+background:linear-gradient(to right,#00c6ff,#0072ff);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+/* Content */
+.content{
+padding:100px 50px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+.menu{
+flex-direction:column;
+background:#333;
+position:absolute;
+top:60px;
+right:0;
+width:200px;
+display:none;
+}
+
+.menu li{
+margin:15px 0;
+text-align:center;
+}
+}
